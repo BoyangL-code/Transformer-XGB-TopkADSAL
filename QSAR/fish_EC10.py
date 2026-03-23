@@ -365,3 +365,11 @@ print("平均误差 (mean absolute fold error):", mean_error)
 # 计算 5% 和 95% 分位数
 lower_bound = np.percentile(error, 5)
 upper_bound = np.percentile(error, 95)
+# 截断异常值
+error_clip = np.clip(error, lower_bound, upper_bound)
+
+mean_error_clip = np.mean(error_clip)
+median_error_clip = np.median(error_clip)
+
+print("截断后平均误差:", mean_error_clip)
+print("截断后中值误差:", median_error_clip)
