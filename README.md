@@ -18,5 +18,4 @@ If you need to change the column names, please modify them accordingly in the .i
 Model Training
 Once the data file is ready, you can start training the model. Navigate to the folder containing the corresponding .ipynb file, then run the notebook step by step (execute the cells in order) to perform training.
 
-Applicability Domain Characterization
-To calculate AD (Applicability Domain) metrics, please refer to the AD files located in each species folder within the repository.
+
